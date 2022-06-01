@@ -39,7 +39,7 @@ describe('Game', () => {
 //    })
  })
 
-  describe('turn', () => {
+describe('turn', () => {
     it("Inserts an 'X' into the top center", async () => {
       game.turn(0, 1)
       expect(game.board[0][1]).toBe('X')
@@ -61,7 +61,7 @@ describe('Game', () => {
 //    })
 //  })
 
-  describe('hasWinner', () => {
+describe('hasWinner', () => {
     it('Wins if any row is filled', async () => {
       for (let r = 0; r < game.board.length; r++) {
         for (let c = 0; c < game.board[r].length; c++) {
@@ -101,5 +101,5 @@ describe('Game', () => {
       }
       expect(game.hasWinner()).toBe(true)
     })
-  })
 })
+
